@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "basemod",
+  "version": "${version}",
+  "name": "Base Mod",
+  "description": "This is a base mod.",
+  "authors": [
+    "ColMarek"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ColMarek",
+    "sources": "https://github.com/ColMarek"
+  },
+
+  "license": "MIT",
+  "icon": "assets/basemod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.colmarek.basemod.BaseMod"
+    ],
+    "client": [
+      {
+        "value": "com.colmarek.basemod.BaseModClient"
+      }
+    ]
+  },
+  "mixins": [
+    "basemod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.7.1",
+    "fabric": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "1.15.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
